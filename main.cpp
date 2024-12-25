@@ -1,4 +1,4 @@
-#include  "modAlphakey.h"
+#include  "modAlphaTable.h"
 using namespace std;
 bool isValid(const string& s)
 {
@@ -20,7 +20,7 @@ int main()
         return 0;
     }
 
-    modAlphakey cipher(key);
+    modAlphaTable cipher(key);
     do {
         cout<<"Cipher ready. Input operation (0-exit, 1-encrypt, 2-decrypt): ";
         cin>>op;
