@@ -1,8 +1,8 @@
-#include  "modAlphakey.h"
+#include  "modAlphaTable.h"
 
 using namespace std;
 
-std::string modAlphakey::encrypt(const std::string& open_text) // шифрование
+std::string modAlphaTable::encrypt(const std::string& open_text) // шифрование
 {
     string tabl = open_text;
     int dl, nstrok, index, x;
@@ -21,7 +21,7 @@ std::string modAlphakey::encrypt(const std::string& open_text) // шифрова
     return tabl;
 }
 
-std::string modAlphakey::decrypt(const std::string& cipher_text) // расшифрование
+std::string modAlphaTable::decrypt(const std::string& cipher_text) // расшифрование
 {
     string tabl = cipher_text;
     int dl, nstrok, index, x;
