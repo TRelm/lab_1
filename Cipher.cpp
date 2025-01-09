@@ -1,4 +1,4 @@
-#include  "modAlphaTable.h"
+#include  "Cipher.h"
 
 using namespace std;
 
